@@ -1,0 +1,105 @@
+
+
+
+/*
+    ================================================================================
+    Headings
+    ================================================================================
+*/
+
+.markdown-paper h1, h2, h3, h4 {
+    font-family: Source Sans Pro;
+    color: #808080;
+}
+
+.markdown-paper h1 {
+    font-size: 1.8em;
+}
+
+.markdown-paper h2 {
+    font-size: 1.4em;
+}
+
+.markdown-paper h3 {
+    font-size: 1.2em;
+}
+
+
+.markdown-paper h1 sup {
+    font-size: 0.8em;
+}
+
+.markdown-paper h2 sup {
+    font-size: 0.6em;
+}
+
+.markdown-paper h3 sup {
+    font-size: 0.4em;
+}
+
+
+
+/*
+    ================================================================================
+    :   Paragraph
+    ================================================================================
+*/
+
+
+.markdown-paper p {
+    margin-bottom: 8px;
+    color: #6d6d6d;
+}
+
+.markdown-paper blockquote {
+    border-left: 4px solid #c7c7c7;
+    padding-left: 2px;
+    margin-left: 2px;
+}
+
+.markdown-paper blockquote p {
+    margin: 0;
+    padding: 5px;
+    color: #969696;
+}
+
+.markdown-paper blockquote p a {
+    color: #969696;
+}
+
+/*
+    ================================================================================
+    :   Lists
+    ================================================================================
+*/
+
+
+.markdown-paper ul {
+    margin-left: 42px;
+}
+
+.markdown-paper ul li {
+    list-style: disc;
+    list-style-type: disc;
+    color: #6d6d6d;
+}
+
+/* Sub Lists */
+.markdown-paper > ul > li > ul {
+    margin-left: 32px;
+}
+
+
+.markdown-paper > ul > li > ul > li {
+    list-style: circle;
+    list-style-type: circle;
+}
+
+
+.markdown-paper pre {
+    background-color: #eae8e8;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 3px;
+}
+

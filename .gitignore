@@ -1,0 +1,5 @@
+.stack-work/
+ContentID.cabal
+.DS_Store
+node_modules/
+elm-stuff

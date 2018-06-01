@@ -1,0 +1,87 @@
+name:                ContentID
+version:             0.1.0.0
+github:              "githubuser/ContentID"
+license:             BSD3
+author:              "Author name here"
+maintainer:          "example@example.com"
+copyright:           "2018 Author name here"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/githubuser/ContentID#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- corelibs
+- async
+- bytestring
+- containers
+- mtl
+- stm
+- text
+- transformers
+- unordered-containers
+- vector
+- filepath
+- directory
+- unix
+- show-prettyprint
+- wl-pprint-text
+- path
+- path-io
+- time
+- binary
+- deepseq
+- foldl
+- process
+- warp
+- wai
+- http-types
+- vault
+- wai-extra
+- wai-app-static
+- yaml == 0.8.30
+- aeson
+- temporary
+- JuicyPixels
+- servant
+- http-reverse-proxy
+- primitive
+- vector-algorithms
+- hip
+
+library:
+  source-dirs:
+      - src/image-hashing
+      - src/web-services
+
+executables:
+  app:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - ContentID
+
+tests:
+  ContentID-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - ContentID

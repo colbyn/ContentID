@@ -1,0 +1,71 @@
+-- This file has been generated from package.yaml by hpack version 0.20.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: a39ed46a96feb77f05314ee2860673b25bb9bcadd2204bd721a38cb4b9ad3539
+
+name:           corelibs
+version:        0.1.0.0
+description:    Please see the README on Github at <https://github.com/githubuser/Client#readme>
+homepage:       https://github.com/githubuser/Client#readme
+bug-reports:    https://github.com/githubuser/Client/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2018 Author name here
+license:        BSD3
+build-type:     Simple
+cabal-version:  >= 1.10
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/Client
+
+library
+  hs-source-dirs:
+      src
+  build-depends:
+      async
+    , base >=4.7 && <5
+    , binary
+    , bytestring
+    , containers
+    , deepseq
+    , directory
+    , filepath
+    , foldl
+    , http-types
+    , mtl
+    , path
+    , path-io
+    , process
+    , show-prettyprint
+    , stm
+    , text
+    , time
+    , transformers
+    , unix
+    , unordered-containers
+    , vault
+    , vector
+    , wai
+    , wai-app-static
+    , wai-extra
+    , warp
+    , wl-pprint-text
+  exposed-modules:
+      Core
+      Core.Control.Flow
+      Core.Either.Util
+      Core.List.Util
+      Core.Text.Util
+      Core.Utils
+      Proto.Class
+      Proto.Data
+      Proto.System.Console
+      Proto.Util
+      Proto.Util.List
+      Proto.Util.Misc
+      Proto.Util.Text
+  other-modules:
+      Paths_corelibs
+  default-language: Haskell2010
